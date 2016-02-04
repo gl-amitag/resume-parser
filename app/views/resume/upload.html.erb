@@ -1,0 +1,6 @@
+<h1>Resume Upload - JSON format</h1>
+<%= form_tag({:action => 'show'}, :multipart => true) do %>
+<p><label for="upload_file">Select File</label>
+<%= file_field 'upload', 'datafile' %></p>
+<%= submit_tag "Upload", data: { disable_with: 'Text' } %>
+<% end %>

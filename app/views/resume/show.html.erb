@@ -1,0 +1,74 @@
+<div id="cv">
+            <div id="contact">
+                <div class="contact-name"><%= @contact_details["first_name"] %> <%= @contact_details["last_name"] %></div>
+                <div class="contact-email"><%= @contact_details["email"] %></div>
+                    <div class="contact-website"><%= @contact_details["website"] %></div>
+                <div class="contact-external"><%= @contact_details["github"] %></div>
+                <div class="contact-city">Living in <%= @contact_details["city"] %></div>
+            </div>
+
+            <div id="education" class="section">
+                <div class="title-section">Education</div>
+                <% @eduction_details.each do |obj| %>
+                    <div class="education-item" data-id="item-education-laval">
+                        <span class="header-date"><%= obj["item-education"]["start-date"] %> – <%= obj["item-education"]["end-date"] %></span>
+                        <span class="header-school-name"><%= obj["item-education"]["institution"]["name"] %></span>
+                        <span class="header-school-location">(<%= obj["item-education"]["institution"]["city"] %>, <%= obj["item-education"]["institution"]["country"] %>)</span> <br>
+                        <span class="description-education"><%= obj["item-education"]["description"] %>
+                            <br>
+                            <%= obj["item-education"]["additional-info"] %>
+                        </span>
+                    </div>
+                <% end %>
+            </div>
+
+            <div id="work-experience" class="section">
+                <div class="title-section">Work Experience</div>
+                <% @work_details.each do |obj| %>
+                    <div class="work-item">
+                        <span class="header-date"><%= obj["item-work"]["start-date"] %> – <%= obj["item-work"]["end-date"] %></span>
+                        <span class="header-company-name"><%= obj["item-work"]["position"] %> at <%= obj["item-work"]["company"]["name"] %></span>
+                        <span class="header-company-location">(<%= obj["item-work"]["company"]["city"] %>, <%= obj["item-work"]["company"]["country"] %>)</span><br>
+                        <div class="description-work"> <%= obj["item-work"]["achievements"] %> </div>
+                        <div class="technologies-work">
+                            <% obj["item-work"]["technologies"].each do |tech| %>
+                                <span><%= tech %> </span>
+                            <% end %>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+
+            <div id="projects" class="section">
+                <div class="title-section">Projects</div>
+                    <% @project_details.each do |obj| %>
+                        <div class="project-item" data-id="id-jumyapps">
+                            <span class="header-company-name"><%= obj["item-projects"]["title"] %></span><br>
+                            <div class="description-work"><%= obj["item-projects"]["description"] %> </div>
+                            <div class="technologies-work">
+                                <% obj["item-projects"]["technologies"].each do |tech| %>
+                                    <span> <%= tech %> </span>
+                                <% end %>
+                            </div>
+                        </div>
+                    <% end %>
+            </div>
+
+            <div id="skills" class="section">
+                <div class="title-section">Skills</div>
+                <div class="skills-items">
+                    <% @skills_details.each do |obj| %>
+                        <span> <%= obj %> </span> 
+                    <% end %>
+                </div>
+            </div>
+
+            <div id="languages" class="section">
+                <div class="title-section">Languages</div>
+                <% @language_details.each do |obj| %>
+                <div class="language-item"> <%= obj["item-languages"]["name"] %>
+                 (<%= obj["item-languages"]["additional-info"] %>)
+                </div>
+                <% end %>
+            </div>
+        </div>
