@@ -1,0 +1,105 @@
+{
+	"contact" : {
+        "first_name": "Amit",
+        "last_name": "Agarwal",
+        "website": "www.sample.com",
+        "email": "mail2amit@gmail.com",
+        "github": "gl-amit",
+        "city": "Noida, India"
+    },
+    "education" : [
+    	{
+	    	"item-education": {
+			    "start-date": "July 2002",
+			    "end-date": "July 2005",
+			    "institution": {
+			        "name": "RBS College",
+			        "city": "Agra",
+			        "country": "India"
+			    },
+			    "description": "MCA",
+			    "additional-info": ""
+		  	}
+    	},
+    	{
+	    	"item-education": {
+			    "start-date": "July 1999",
+			    "end-date": "July 2002",
+			    "institution": {
+			        "name": "AIIMS College",
+			        "city": "Agra",
+			        "country": "India"
+			    },
+			    "description": "BCA",
+			    "additional-info": ""
+		  	}
+    	}
+    ],
+    "work" : [
+    	{
+    		"item-work": {
+			    "start-date": "July 2008",
+			    "end-date": "Present",
+			    "position": "Consultant Engineering",
+			    "company": {
+			        "name": "GlobalLogic Inc",
+			        "city": "Noida",
+			        "country": "India"
+			     },
+			    "achievements": "Engineering Excellance Award",
+			    "technologies": ["Ruby on Rails", "AngularJS"]
+			}
+		},
+		{
+    		"item-work": {
+			    "start-date": "April 2007",
+			    "end-date": "June 2008",
+			    "position": "Web Developer",
+			    "company": {
+			        "name": "Caneum India",
+			        "city": "Gurgaon",
+			        "country": "India"
+			     },
+			    "achievements": "Monthly Spot Award",
+			    "technologies": ["PHP", "jQuery"]
+			}
+		}
+    ],
+    "projects" : [
+    	{
+    		"item-projects": {
+			    "title": "WineAccess.com",
+			    "description":"Leading wine seller in USA",
+			    "technologies": ["Ruby on Rails", "MongoDb"]
+			}
+		},
+		{
+    		"item-projects": {
+			    "title": "Auction.com",
+			    "description":"Leading real estate marketplace in USA",
+			    "technologies": ["AngularJs", "Python"]
+			}
+    	}
+    ],
+    "language" : [
+    	{
+    		"item-languages": {
+			    "name": "Hindi",
+			    "additional-info": "Excellance"
+			}
+		},
+		{
+    		"item-languages": {
+			    "name": "Engilsh",
+			    "additional-info": "Excellance"
+			}
+    	}
+    ],
+    "skills" : [
+    	"PHP",
+    	"Ruby on Rails",
+    	"AngularJs",
+    	"EmberJS",
+    	"NodeJs"
+    ]
+}
